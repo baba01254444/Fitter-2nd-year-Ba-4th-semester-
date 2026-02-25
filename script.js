@@ -3,15 +3,36 @@ const subjects = ["Hindi", "English", "Sociology", "Human Value", "Digital Marke
 
 // Sample Data (Aap yahan 50-50 questions har subject ke add kar sakte hain)
 const allQuestions = {
-    "Fitter Theory": [
-        { q: "Bench vice ki size kis se li jati hai?", a: "Jaw ki chaudai", options: ["Spindle", "Jaw ki chaudai", "Handle", "Body"] },
-        // ... Add more 50 questions here
+    "English": [
+        { 
+            q: "Translating tools is a system:", 
+            options: ["Software system", "Hardware system", "Operating system", "Database system"], 
+            a: "Software system" 
+        },
+        { 
+            q: "Translation tools translated __________ into another language:", 
+            options: ["Source Language (SL)", "Target Language (TL)", "Both SL and TL", "None of these"], 
+            a: "Source Language (SL)" 
+        },
+        { 
+            q: "TL stands for:", 
+            options: ["Total Language", "Target Language", "Translation Language", "Technical Language"], 
+            a: "Target Language" 
+        }
     ],
-    "Digital Marketing": [
-        { q: "SEO ka full form kya hai?", a: "Search Engine Optimization", options: ["Search Engine Opt", "Social Engine Opt", "Search Entry Opt", "None"] },
-    ]
-    // Add other subjects similarly
+    "Fitter Theory": [
+        { 
+            q: "Bench vice ki size kis se li jati hai?", 
+            options: ["Jaw ki chaudai", "Spindle ki lambai", "Handle ki lambai", "Body ka weight"], 
+            a: "Jaw ki chaudai" 
+        }
+    ],
+    "Digital Marketing": [],
+    "Hindi": [],
+    "Sociology": [],
+    "Human Value": []
 };
+
 
 let currentSet = [];
 let currentIndex = 0;
