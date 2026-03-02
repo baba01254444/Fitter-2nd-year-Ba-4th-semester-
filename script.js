@@ -18,7 +18,103 @@ const allQuestions = {
             q: "TL stands for:", 
             options: ["Total Language", "Target Language", "Translation Language", "Technical Language"], 
             a: "Target Language" 
-        }
+        },
+        { 
+            q: "In which year was 'Pinjar' published?", 
+            options: ["1947", "1950", "1956", "1960"], 
+            a: "1950" 
+        },
+        { 
+            q: "Original language of 'Pinjar'?", 
+            options: ["Hindi", "English", "Punjabi", "Urdu"], 
+            a: "Punjabi" 
+        },
+        { 
+            q: "Who translated 'Pinjar' to English?", 
+            options: ["Dennis Mat", "Khushwant Singh", "Pritam Singh", "Sahir Ludhianvi"], 
+            a: "Khushwant Singh" 
+        },
+        { 
+            q: "Protagonist of 'Pinjar'?", 
+            options: ["Lajo", "Puro", "Tara", "Rajjo"], 
+            a: "Puro" 
+        },
+        { 
+            q: "Puro's village name in the novel?", 
+            options: ["Rattowal", "Chatto", "Sakkar", "Gujranwala"], 
+            a: "Chatto" 
+        },
+        { 
+            q: "Who kidnaps Puro?", 
+            options: ["Ramchand", "Trilok", "Rashid", "Mohan Lal"], 
+            a: "Rashid" 
+        },
+        { 
+            q: "Puro's new name after marriage?", 
+            options: ["Sara", "Hamida", "Rehma", "Tara"], 
+            a: "Hamida" 
+        },
+        { 
+            q: "Central region of the novel?", 
+            options: ["Punjab", "Uttar Pradesh", "Gujarat", "Rajasthan"], 
+            a: "Punjab" 
+        },
+        { 
+            q: "Main theme of 'Pinjar'?", 
+            options: ["Love story", "Partition violence", "Family reunion", "Revenge only"], 
+            a: "Partition violence" 
+        },
+        { 
+            q: "Puro's fiancé in the story?", 
+            options: ["Rashid", "Trilok", "Ramchand", "Shyam Lal"], 
+            a: "Ramchand" 
+        },
+        { 
+            q: "Puro's brother's name?", 
+            options: ["Ramchand", "Trilok", "Mohan Lal", "Shyam Lal"], 
+            a: "Trilok" 
+        },
+        { 
+            q: "Puro's sister's name?", 
+            options: ["Tara", "Rajjo", "Lajo", "Hamida"], 
+            a: "Rajjo" 
+        },
+        { 
+            q: "Puro's mother's name?", 
+            options: ["Tara", "Rehma", "Sara", "Lajo"], 
+            a: "Tara" 
+        },
+        { 
+            q: "Ramchand's sister's name?", 
+            options: ["Rajjo", "Lajo", "Puro", "Tara"], 
+            a: "Lajo" 
+        },
+        { 
+            q: "Amrita Pritam's birth year?", 
+            options: ["1919", "1920", "1935", "1950"], 
+            a: "1919" 
+        },
+        { 
+            q: "Who was the first woman to receive Sahitya Akademi Award?", 
+            options: ["Amrita Pritam", "Mahadevi Verma", "Kamala Das", "Sarojini Naidu"], 
+            a: "Amrita Pritam" 
+        },
+        { 
+            q: "Meaning of the Punjabi word 'Pinjar'?", 
+            options: ["Cage", "Skeleton", "Bird", "Love"], 
+            a: "Skeleton" 
+        },
+        { 
+            q: "Which film is based on the novel 'Pinjar'?", 
+            options: ["The Skeleton", "Puro", "Pinjar", "Partition"], 
+            a: "Pinjar" 
+        },
+        { 
+            q: "Main conflict in 'Pinjar' arises from?", 
+            options: ["Love vs Hate", "Partition of India-Pakistan", "Family vs Society", "Slavery only"], 
+            a: "Partition of India-Pakistan" 
+                }
+
     ],
     "Fitter Theory": [
         { 
