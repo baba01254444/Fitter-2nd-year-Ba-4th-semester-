@@ -66,7 +66,41 @@ const allQuestions = {
             { q: "How does Bimala feel after stealing the money?", options: ["Proud", "Guilty and ashamed", "Excited", "Indifferent"], a: "Guilty and ashamed" },
             { q: "Swadeshi leader who favors violence?", options: ["Nikhilesh", "Chandranath", "Sandip", "Bara Rani"], a: "Sandip" },
             { q: "Main socio-political focus of the novel?", options: ["Partition riots", "Bengal partition, Swadeshi", "World War", "Independence 1947"], a: "Bengal partition, Swadeshi" }
-        ]
+        ],
+                "Chapter 3: Kanyadan": [
+            { q: "'Kanyadan' was originally written in which language?", options: ["Hindi", "Marathi", "English", "Tamil"], a: "Marathi" },
+            { q: "In which year was 'Kanyadan' published?", options: ["1978", "1983", "1990", "2008"], a: "1983" },
+            { q: "Who translated 'Kanyadan' to English?", options: ["Vijay Tendulkar", "Gauri Ramnarayan", "Priya Tendulkar", "Nirmala Tendulkar"], a: "Gauri Ramnarayan" },
+            { q: "Vijay Tendulkar's birth year?", options: ["1928", "1935", "1940", "1950"], a: "1928" },
+            { q: "Vijay Tendulkar's death year?", options: ["2000", "2008", "2010", "2015"], a: "2008" },
+            { q: "Vijay Tendulkar is famous for plays in?", options: ["Hindi theatre", "Marathi theatre", "English drama", "Sanskrit plays"], a: "Marathi theatre" },
+            { q: "What was the name of Vijay Tendulkar's wife?", options: ["Gauri", "Nirmala", "Priya", "Jyoti"], a: "Nirmala" },
+            { q: "Number of children Vijay Tendulkar had?", options: ["2", "3", "4", "5"], a: "4" },
+            { q: "Which daughter of Tendulkar was a famous actress?", options: ["Gauri", "Priya Tendulkar", "Nirmala", "Jyoti"], a: "Priya Tendulkar" },
+            { q: "Which major award was received by Tendulkar?", options: ["Padma Shri only", "Padma Bhushan", "Bharat Ratna", "Jnanpith only"], a: "Padma Bhushan" },
+            { q: "Central theme of the play 'Kanyadan'?", options: ["Love marriage", "Inter-caste marriage failure", "Political drama", "Family reunion"], a: "Inter-caste marriage failure" },
+            { q: "What does the title 'Kanyadan' mean?", options: ["Gift of son", "Gift of daughter (marriage)", "Caste unity", "Dalit empowerment"], a: "Gift of daughter (marriage)" },
+            { q: "The play 'Kanyadan' critiques?", options: ["Upper caste only", "Caste system and patriarchy", "Dalit politics", "Urban life"], a: "Caste system and patriarchy" },
+            { q: "Idealism vs Realism in the play is shown through?", options: ["Arun and Jyoti", "Nath and Seva", "Jayaprakash and Vaman", "Kamal and Hardas"], a: "Nath and Seva" },
+            { q: "Who is the domestic violence perpetrator in the play?", options: ["Nath", "Arun Athavale", "Jayaprakash", "Vaman Seth"], a: "Arun Athavale" },
+            { q: "What is the title of Arun's autobiography?", options: ["Dalit Life", "Rides", "Kanyadan", "Revenge"], a: "Rides" },
+            { q: "The family in the play lives in which city?", options: ["Mumbai", "Pune", "Delhi", "Nagpur"], a: "Pune" },
+            { q: "What is the protagonist Jyoti's caste?", options: ["Dalit", "Brahmin", "Shudra", "Kshatriya"], a: "Brahmin" },
+            { q: "Who is Jyoti's father in the play?", options: ["Arun", "Nath Devlekar", "Jayaprakash", "Hardas"], a: "Nath Devlekar" },
+            { q: "What is Nath's profession?", options: ["Writer", "MLA (politician)", "Teacher", "Publisher"], a: "MLA (politician)" },
+            { q: "Who is Jyoti's mother?", options: ["Gauri", "Seva", "Priya", "Nirmala"], a: "Seva" },
+            { q: "Who is Jyoti's brother?", options: ["Arun", "Jayaprakash", "Vaman", "Kamal"], a: "Jayaprakash" },
+            { q: "What is Arun Athavale's caste?", options: ["Brahmin", "Dalit", "Upper class", "Merchant"], a: "Dalit" },
+            { q: "Arun was a student of?", options: ["Jyoti", "Nath", "Seva", "Jayaprakash"], a: "Jyoti" },
+            { q: "Who gave the book launch speech?", options: ["Arun", "Nath", "Vaman Seth", "Hardas Chimote"], a: "Vaman Seth" },
+            { q: "Arun works part-time at?", options: ["Hotel", "Newspaper (Shramik Samachar)", "Politics", "Factory"], a: "Newspaper (Shramik Samachar)" },
+            { q: "Jyoti's age at the time of marriage?", options: ["18", "20", "21", "23"], a: "21" },
+            { q: "What is Jayaprakash's age in the play?", options: ["20", "21", "23", "25"], a: "23" },
+            { q: "Arun beats Jyoti primarily due to?", options: ["Love", "Revenge on upper caste", "Money", "Politics"], a: "Revenge on upper caste" },
+            { q: "What is the conclusion of the play?", options: ["Happy marriage", "Inter-caste marriage fails to end casteism", "Divorce", "Reunion"], a: "Inter-caste marriage fails to end casteism" }
+        ],
+        
+            
     },
     "Fitter Theory": {
         "Chapter 1": [
@@ -77,7 +111,7 @@ const allQuestions = {
     "Hindi": { "Chapter 1": [] },
     "Sociology": { "Chapter 1": [] },
     "Human Value": { "Chapter 1": [] }
-};
+}; 
 
 let currentSet = [];
 let currentIndex = 0;
