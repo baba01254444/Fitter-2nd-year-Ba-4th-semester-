@@ -1,11 +1,11 @@
 /* Full Body Styling */
 body { 
     font-family: 'Poppins', 'Segoe UI', Roboto, sans-serif; 
-    background: linear-gradient(135.deg, #667eea 0%, #764ba2 100%); /* Rang-biranga Gradient */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Rang-biranga Gradient */
     color: #2d3436; 
     margin: 0; 
-    padding: 40px 15px; /* Page ko long banane ke liye extra padding */
-    min-height: 120vh; /* Background ko lamba dikhane ke liye */
+    padding: 40px 15px; 
+    min-height: 120vh; 
 }
 
 /* Main Container */
@@ -26,11 +26,11 @@ header {
     padding-bottom: 10px;
 }
 
-h1 { font-size: 2.2rem; color: #4834d4; } /* Bada Text */
-h2, h3 { font-size: 1.8rem; color: #6c5ce7; }
-#question-text { font-size: 1.5rem; font-weight: 600; line-height: 1.4; margin-bottom: 20px; }
+h1 { font-size: 2.5rem; color: #4834d4; } /* Big Title */
+h2, h3 { font-size: 2rem; color: #6c5ce7; }
+#question-text { font-size: 1.7rem; font-weight: 600; line-height: 1.4; margin-bottom: 25px; color: #2d3436; }
 
-.creator { color: #636e72; font-style: italic; font-size: 1.1rem; }
+.creator { color: #636e72; font-style: italic; font-size: 1.2rem; }
 
 /* Subject Selection Grid */
 .subject-grid { 
@@ -39,7 +39,7 @@ h2, h3 { font-size: 1.8rem; color: #6c5ce7; }
     gap: 20px; 
 }
 
-/* Button Styling (Big & Colorful) */
+/* Common Button Styling */
 button { 
     padding: 18px; 
     cursor: pointer; 
@@ -47,7 +47,7 @@ button {
     border-radius: 12px; 
     background: #4834d4; 
     color: white; 
-    font-size: 1.2rem; /* Big Font */
+    font-size: 1.3rem; /* Big Font */
     font-weight: bold; 
     transition: all 0.3s ease;
     box-shadow: 0 5px 15px rgba(72, 52, 212, 0.3);
@@ -61,7 +61,7 @@ button:hover {
 
 .hidden { display: none; }
 
-/* Options (Buttons) */
+/* Options Container */
 .options-container { 
     display: flex; 
     flex-direction: column; 
@@ -69,37 +69,44 @@ button:hover {
     margin-top: 25px; 
 }
 
+/* Option Buttons with Green Stroke */
 .option-btn { 
     background: #ffffff; 
     color: #2d3436; 
-    border: 2px solid #dfe6e9; 
+    /* Green stroke added here */
+    border: 3px solid #2ecc71; 
     text-align: left; 
-    padding: 20px;
-    font-size: 1.1rem;
+    padding: 22px;
+    font-size: 1.4rem; /* Big Text for Options */
+    font-weight: 500;
+    border-radius: 15px;
+    transition: all 0.2s ease;
 }
 
 .option-btn:hover {
-    background: #f1f2f6;
-    border-color: #6c5ce7;
+    background: #f0fff4; /* Light green background on hover */
+    border-color: #27ae60; 
+    transform: scale(1.01);
 }
 
 .option-btn.selected { 
     background: #e8f0fe; 
-    border-color: #4834d4; 
+    border-color: #4834d4; /* Select hone par purple stroke */
     color: #4834d4;
+    border-width: 4px;
 }
 
 /* Result Colors */
 .correct { 
     background: #2ecc71 !important; 
     color: white !important; 
-    border-color: #27ae60 !important; 
+    border: 4px solid #1e8449 !important; 
 }
 
 .wrong { 
     background: #ff7675 !important; 
     color: white !important; 
-    border-color: #d63031 !important; 
+    border: 4px solid #c0392b !important; 
 }
 
 /* Controls (Next/Prev) */
@@ -107,10 +114,10 @@ button:hover {
     display: flex; 
     justify-content: space-between; 
     margin-top: 40px; 
-    gap: 10px;
+    gap: 15px;
 }
 
-#progress { font-size: 1.3rem; font-weight: bold; color: #4834d4; }
+#progress { font-size: 1.5rem; font-weight: bold; color: #4834d4; }
 
 /* Home & Submit Buttons */
 .home-btn { 
@@ -118,13 +125,14 @@ button:hover {
     margin-top: 25px; 
     background: #00b894; 
 }
-.home-btn:hover { background: #55efc4; }
 
 #submit-btn { background: #fdb827; color: #000; }
 
 /* Mobile Optimization */
 @media (max-width: 600px) {
     .subject-grid { grid-template-columns: 1fr; }
-    h1 { font-size: 1.8rem; }
+    h1 { font-size: 2rem; }
+    #question-text { font-size: 1.4rem; }
+    .option-btn { font-size: 1.2rem; padding: 18px; }
     button { padding: 15px; font-size: 1.1rem; }
 }
