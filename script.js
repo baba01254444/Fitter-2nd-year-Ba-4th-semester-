@@ -5,7 +5,7 @@ const subjects = [
     { name: "Sociology", chapters: ["Chapter 1"] },
     { name: "Physical education and yoga", chapters: ["Chapter 1"] },
     { name: "Digital Marketing", chapters: ["Chapter 1"] },
-    { name: "Fitter Theory", chapters: ["Chapter 1"] }
+    { name: "Fitter Theory", chapters: ["Chapter 1"] },
 ];
 
 // 2. Organized Questions (Hindi Ch-1 and English Ch-4 Added)
@@ -201,7 +201,9 @@ const allQuestions = {
     "Fitter Theory": { "Chapter 1": [{ q: "Bench vice size?", options: ["Jaw", "Handle"], a: "Jaw" }] },
     "Digital Marketing": { "Chapter 1": [] },
     "Sociology": { "Chapter 1": [] },
-    "Physical education and yoga": { "Chapter 1": [{ q: "शारीरिक शिक्षा का सरल अर्थ क्या है?", options: ["खेल-कूद से सर्वांगीण विकास", "केवल दौड़ना-कूदना", "किताबी ज्ञान", "संगीत प्रशिक्षण"], a: "खेल-कूद से सर्वांगीण विकास" },
+    "Physical education and yoga": { 
+"Chapter 1": [
+{ q: "शारीरिक शिक्षा का सरल अर्थ क्या है?", options: ["खेल-कूद से सर्वांगीण विकास", "केवल दौड़ना-कूदना", "किताबी ज्ञान", "संगीत प्रशिक्षण"], a: "खेल-कूद से सर्वांगीण विकास" },
         { q: "J.F. Williams की परिभाषा में मुख्य शब्द क्या है?", options: ["Physical activities selected", "Mental development", "Academic learning", "Artistic skills"], a: "Physical activities selected" },
         { q: "Charles A. Bucher के अनुसार शारीरिक शिक्षा किसका हिस्सा है?", options: ["Total education का हिस्सा", "अलग विषय", "केवल खेल", "व्यायाम कला"], a: "Total education का हिस्सा" },
         { q: "शारीरिक शिक्षा का मुख्य लक्ष्य क्या है?", options: ["शारीरिक, मानसिक, भावनात्मक विकास", "केवल मांसपेशियाँ", "परीक्षा पास करना", "डिग्री प्राप्ति"], a: "शारीरिक, मानसिक, भावनात्मक विकास" },
@@ -230,7 +232,8 @@ const allQuestions = {
         { q: "प्राचीन भारत में शारीरिक शिक्षा के रूप क्या थे?", options: ["धनुर्विद्या, मल्लयुद्ध", "योग, कुश्ती", "वैदिक काल की शिक्षा", "उपरोक्त सभी"], a: "उपरोक्त सभी" },
         { q: "1854 के Wood's Despatch में क्या सुझाव दिया गया था?", options: ["शारीरिक प्रशिक्षण की सिफारिश", "खेलों पर प्रतिबंध", "केवल किताबी ज्ञान", "योग का विरोध"], a: "शारीरिक प्रशिक्षण की सिफारिश" },
         { q: "स्वतंत्रता के बाद 1948 में किस संस्थान की स्थापना हुई?", options: ["LNCPE Gwalior", "NCERT", "UGC", "Khelo India"], a: "LNCPE Gwalior" },
-        { q: "आधुनिक भारत में शारीरिक शिक्षा की मुख्य योजनाएं कौन सी हैं?", options: ["Khelo India, Fit India", "NEP 2020", "RKSK 2012", "उपरोक्त सभी"], a: "उपरोक्त सभी" }]
+        { q: "आधुनिक भारत में शारीरिक शिक्षा की मुख्य योजनाएं कौन सी हैं?", options: ["Khelo India, Fit India", "NEP 2020", "RKSK 2012", "उपरोक्त सभी"], a: "उपरोक्त सभी" },
+        ]
 },
 
 // Quiz Logic
