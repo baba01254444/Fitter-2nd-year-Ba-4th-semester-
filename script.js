@@ -1,77 +1,71 @@
 // Developed By: [[ R0HiiT_YadaV ]]
 
+// 1. Updated Subject Structure (All 10 Chapters for each)
 const subjects = [
-    { name: "Hindi", chapters: Array.from({length: 10}, (_, i) => `Chapter ${i + 1}`) },
-    { name: "English", chapters: Array.from({length: 10}, (_, i) => `Chapter ${i + 1}`) },
+    { name: "Hindi", chapters: Array.from({length: 10}, (_, i) => i === 0 ? "Chapter 1: अनुवाद का अर्थ, स्वरूप और महत्व" : i === 1 ? "Unit 2: हिंदी अनुवाद का अर्थ, परिभाषा और महत्व" : `Chapter ${i + 1}`) },
+    { name: "English", chapters: ["Chapter 1: Pinjar", "Chapter 2: The Home and the World", "Chapter 3: Kanyadan", "Chapter 4: Translation Studies", "Chapter 5", "Chapter 6", "Chapter 7", "Chapter 8", "Chapter 9", "Chapter 10"] },
     { name: "Sociology", chapters: Array.from({length: 10}, (_, i) => `Chapter ${i + 1}`) },
     { name: "Physical Education and Yoga", chapters: Array.from({length: 10}, (_, i) => `Chapter ${i + 1}`) },
     { name: "Fitter Theory", chapters: Array.from({length: 10}, (_, i) => `Chapter ${i + 1}`) }
 ];
 
+// 2. Organized Questions (Har Chapter mein 2-2 Sample Questions)
 const allQuestions = {
     "Hindi": {
-        "Chapter 1": [{q: "अनुवाद का अर्थ क्या है?", options: ["पुनः कथन", "लेखन", "श्रवण", "पठन"], a: "पुनः कथन"}, {q: "स्रोत भाषा किसे कहते हैं?", options: ["जिससे अनुवाद हो", "जिसमें अनुवाद हो", "विदेशी भाषा", "मातृभाषा"], a: "जिससे अनुवाद हो"}],
-        "Chapter 2": [{q: "तर्जुमा किस भाषा का शब्द है?", options: ["अरबी", "हिंदी", "संस्कृत", "अंग्रेजी"], a: "अरबी"}, {q: "अनुवाद की प्रक्रिया के मुख्य चरण?", options: ["3", "5", "7", "2"], a: "3"}],
-        "Chapter 3": [{q: "H3 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "H3 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 4": [{q: "H4 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "H4 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 5": [{q: "H5 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "H5 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 6": [{q: "H6 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "H6 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 7": [{q: "H7 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "H7 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 8": [{q: "H8 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "H8 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 9": [{q: "H9 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "H9 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 10": [{q: "H10 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "H10 Q2", options: ["A", "B", "C", "D"], a: "B"}]
+        "Chapter 1: अनुवाद का अर्थ, स्वरूप और महत्व": [
+            { q: "अनुवाद का मूल अर्थ क्या है?", options: ["नया साहित्य रचना", "पुनः कथन", "शब्द बदलना", "व्याकरण सुधार"], a: "पुनः कथन" },
+            { q: "अनुवाद का महत्व क्या है?", options: ["सांस्कृतिक आदान-प्रदान", "समय काटना", "मूल ग्रंथ को नष्ट करना", "लिखना सीखना"], a: "सांस्कृतिक आदान-प्रदान" }
+        ],
+        "Unit 2: हिंदी अनुवाद का अर्थ, परिभाषा और महत्व": [
+            { q: "अनुवाद शब्द किस धातु से बना है?", options: ["वद्", "पठ्", "लिख्", "गम्"], a: "वद्" },
+            { q: "तर्जुमा किस भाषा का शब्द है?", options: ["अरबी", "फारसी", "तुर्की", "हिंदी"], a: "अरबी" }
+        ]
+        // Baki Chapters 3-10 ke liye aap niche Sociology wala format follow karein
     },
     "English": {
-        "Chapter 1": [{q: "Who wrote 'Pinjar'?", options: ["Amrita Pritam", "Tagore", "Premchand", "Khushwant Singh"], a: "Amrita Pritam"}, {q: "Theme of Pinjar?", options: ["Partition", "War", "Politics", "Nature"], a: "Partition"}],
-        "Chapter 2": [{q: "E2 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "E2 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 3": [{q: "E3 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "E3 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 4": [{q: "E4 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "E4 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 5": [{q: "E5 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "E5 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 6": [{q: "E6 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "E6 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 7": [{q: "E7 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "E7 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 8": [{q: "E8 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "E8 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 9": [{q: "E9 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "E9 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 10": [{q: "E10 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "E10 Q2", options: ["A", "B", "C", "D"], a: "B"}]
+        "Chapter 1: Pinjar": [
+            { q: "Who is the author of 'Pinjar'?", options: ["Amrita Pritam", "Khushwant Singh", "Tagore", "Premchand"], a: "Amrita Pritam" },
+            { q: "Theme of Pinjar?", options: ["Partition", "War", "Politics", "Nature"], a: "Partition" }
+        ],
+        "Chapter 2: The Home and the World": [
+            { q: "Original title of 'The Home and the World'?", options: ["Ghare Baire", "Gitanjali", "Chokher Bali", "Kabuliwala"], a: "Ghare Baire" },
+            { q: "Author of 'The Home and the World'?", options: ["Tagore", "Gandhi", "Nehru", "Sarojini Naidu"], a: "Tagore" }
+        ],
+        "Chapter 3: Kanyadan": [
+            { q: "'Kanyadan' was originally written in which language?", options: ["Hindi", "Marathi", "English", "Tamil"], a: "Marathi" },
+            { q: "Who wrote 'Kanyadan'?", options: ["Vijay Tendulkar", "Girish Karnad", "Badal Sircar", "Mohan Rakesh"], a: "Vijay Tendulkar" }
+        ],
+        "Chapter 4: Translation Studies": [
+            { q: "Translating tools is a system:", options: ["Software system", "Hardware system", "Operating system", "Database system"], a: "Software system" },
+            { q: "Translation tools translate __________ into another language:", options: ["Source Language (SL)", "Target Language (TL)", "Both SL and TL", "None of these"], a: "Source Language (SL)" }
+        ]
     },
     "Sociology": {
-        "Chapter 1": [{q: "Father of Sociology?", options: ["Auguste Comte", "Aristotle", "Plato", "Marx"], a: "Auguste Comte"}, {q: "Sociology is study of?", options: ["Society", "Plants", "Stars", "History"], a: "Society"}],
-        "Chapter 2": [{q: "S2 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "S2 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 3": [{q: "S3 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "S3 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 4": [{q: "S4 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "S4 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 5": [{q: "S5 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "S5 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 6": [{q: "S6 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "S6 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 7": [{q: "S7 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "S7 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 8": [{q: "S8 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "S8 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 9": [{q: "S9 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "S9 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 10": [{q: "S10 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "S10 Q2", options: ["A", "B", "C", "D"], a: "B"}]
+        "Chapter 1": [
+            { q: "Who is the father of Sociology?", options: ["Auguste Comte", "Aristotle", "Plato", "Karl Marx"], a: "Auguste Comte" },
+            { q: "Sociology is the study of?", options: ["Society", "Environment", "Plants", "History"], a: "Society" }
+        ],
+        "Chapter 2": [{q:"S2 Q1", options:["A","B","C","D"], a:"A"}, {q:"S2 Q2", options:["A","B","C","D"], a:"B"}]
+        // Chapter 3 to 10 repeat karein...
     },
     "Physical Education and Yoga": {
-        "Chapter 1": [{q: "शारीरिक शिक्षा का लक्ष्य?", options: ["सर्वांगीण विकास", "दौड़ना", "पढाई", "कुश्ती"], a: "सर्वांगीण विकास"}, {q: "Sound mind in sound body?", options: ["Plato", "Aristotle", "Gandhi", "Nehru"], a: "Aristotle"}],
-        "Chapter 2": [{q: "P2 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "P2 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 3": [{q: "P3 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "P3 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 4": [{q: "P4 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "P4 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 5": [{q: "P5 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "P5 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 6": [{q: "P6 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "P6 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 7": [{q: "P7 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "P7 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 8": [{q: "P8 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "P8 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 9": [{q: "P9 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "P9 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 10": [{q: "P10 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "P10 Q2", options: ["A", "B", "C", "D"], a: "B"}]
+        "Chapter 1": [
+            { q: "शारीरिक शिक्षा का मुख्य लक्ष्य क्या है?", options: ["सर्वांगीण विकास", "केवल खेलना", "दौड़ना", "मजबूत बनना"], a: "सर्वांगीण विकास" },
+            { q: "स्वस्थ शरीर में स्वस्थ मन किसका कथन है?", options: ["अरस्तू", "प्लेटो", "गाँधी", "नेहरू"], a: "अरस्तू" }
+        ],
+        "Chapter 2": [{q:"P2 Q1", options:["A","B","C","D"], a:"A"}, {q:"P2 Q2", options:["A","B","C","D"], a:"B"}]
     },
     "Fitter Theory": {
-        "Chapter 1": [{q: "Bench vice size?", options: ["Jaw width", "Spindle", "Handle", "Body"], a: "Jaw width"}, {q: "Marking tool?", options: ["Scriber", "Hammer", "Chisel", "Saw"], a: "Scriber"}],
-        "Chapter 2": [{q: "F2 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "F2 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 3": [{q: "F3 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "F3 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 4": [{q: "F4 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "F4 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 5": [{q: "F5 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "F5 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 6": [{q: "F6 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "F6 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 7": [{q: "F7 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "F7 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 8": [{q: "F8 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "F8 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 9": [{q: "F9 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "F9 Q2", options: ["A", "B", "C", "D"], a: "B"}],
-        "Chapter 10": [{q: "F10 Q1", options: ["A", "B", "C", "D"], a: "A"}, {q: "F10 Q2", options: ["A", "B", "C", "D"], a: "B"}]
+        "Chapter 1": [
+            { q: "Bench vice size is determined by?", options: ["Width of jaw", "Length of spindle", "Weight", "Height"], a: "Width of jaw" },
+            { q: "Which tool is used for marking?", options: ["Scriber", "Hammer", "Chisel", "Saw"], a: "Scriber" }
+        ],
+        "Chapter 2": [{q:"F2 Q1", options:["A","B","C","D"], a:"A"}, {q:"F2 Q2", options:["A","B","C","D"], a:"B"}]
     }
 };
 
-let currentQuestions = [];
+// --- Logic Implementation ---
+let currentSet = [];
 let userAnswers = {};
 let currentIndex = 0;
 
@@ -101,9 +95,11 @@ function showChapters(sub) {
 }
 
 function startQuiz(subName, chapName) {
-    const raw = allQuestions[subName][chapName] || [];
-    // Shuffle questions and take only 30 (yahan 2 hain to 2 hi aayenge)
-    currentQuestions = raw.sort(() => 0.5 - Math.random()).slice(0, 30);
+    const raw = (allQuestions[subName] && allQuestions[subName][chapName]) ? allQuestions[subName][chapName] : [];
+    if(raw.length === 0) { alert("Bhai, is chapter me data nahi hai!"); return; }
+    
+    // Shuffle and take max 30 questions
+    currentSet = raw.sort(() => 0.5 - Math.random()).slice(0, 30);
     currentIndex = 0;
     userAnswers = {};
     document.getElementById('chapter-screen').classList.add('hidden');
@@ -112,13 +108,13 @@ function startQuiz(subName, chapName) {
 }
 
 function showQuestion() {
-    const q = currentQuestions[currentIndex];
-    document.getElementById('progress').innerText = `Question: ${currentIndex + 1}/${currentQuestions.length}`;
+    const q = currentSet[currentIndex];
+    document.getElementById('progress').innerText = `Question: ${currentIndex + 1}/${currentSet.length}`;
     document.getElementById('question-text').innerText = q.q;
     const optContainer = document.getElementById('options-container');
     optContainer.innerHTML = '';
     
-    // Shuffle Options Order (Requirement #10)
+    // Shuffle Options (Requirement #10)
     let shuffledOptions = [...q.options].sort(() => 0.5 - Math.random());
     
     shuffledOptions.forEach(opt => {
@@ -128,9 +124,39 @@ function showQuestion() {
         btn.innerText = opt;
         btn.onclick = () => {
             userAnswers[currentIndex] = opt;
-            showQuestion();
+            const btns = optContainer.querySelectorAll('.option-btn');
+            btns.forEach(b => b.classList.remove('selected'));
+            btn.classList.add('selected');
         };
         optContainer.appendChild(btn);
     });
 
-    document.getElementById('prev-btn').style.visibility = currentIndex === 0 ? 'hidden' : 'visible
+    document.getElementById('prev-btn').style.visibility = currentIndex === 0 ? 'hidden' : 'visible';
+    document.getElementById('next-btn').classList.toggle('hidden', currentIndex === currentSet.length - 1);
+    document.getElementById('submit-btn').classList.toggle('hidden', currentIndex !== currentSet.length - 1);
+}
+
+function nextQuestion() { currentIndex++; showQuestion(); }
+function prevQuestion() { currentIndex--; showQuestion(); }
+
+function showResults() {
+    document.getElementById('quiz-screen').classList.add('hidden');
+    document.getElementById('result-screen').classList.remove('hidden');
+    let score = 0;
+    let feedback = '';
+    currentSet.forEach((q, i) => {
+        const correct = userAnswers[i] === q.a;
+        if(correct) score++;
+        feedback += `<div class="feedback-item" style="padding:10px; border-bottom:1px solid #ddd;">
+            <p><strong>Q${i+1}: ${q.q}</strong></p>
+            <p>Aapka Answer: <span style="color:${correct?'green':'red'}">${userAnswers[i]||'Nahi diya'}</span></p>
+            ${!correct?`<p>Correct: <span style="color:green">${q.a}</span></p>`:''}
+        </div>`;
+    });
+    document.getElementById('score-summary').innerHTML = `<h3>Result: ${score}/${currentSet.length}</h3>`;
+    document.getElementById('feedback-list').innerHTML = feedback;
+}
+
+function goHome() { location.reload(); }
+
+window.onload = init;
