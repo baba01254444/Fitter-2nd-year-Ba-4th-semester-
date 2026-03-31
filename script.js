@@ -5,7 +5,8 @@ const subjects = [
         chapters: [
             "Chapter 1: अनुवाद का अर्थ और स्वरूप", 
             "Chapter 2: हिंदी अनुवाद का अर्थ और महत्व",
-            "Chapter 3: अनुवाद के सिद्धांत व प्रक्रिया" // Yahan add karna zaroori tha
+            "Chapter 3: अनुवाद के सिद्धांत व प्रक्रिया",
+            "Chapter 4: अनुवाद का परीक्षण, पुनरीक्षण, मूल्यांकन और समीक्षा"
         ] 
     },
     { name: "English", chapters: ["Chapter 1: Pinjar", "Chapter 2: The Home and the World", "Chapter 3: Kanyadan", "Chapter 4: Translation Studies"] },
@@ -39,8 +40,15 @@ const allQuestions = {
                 options: ["विश्लेषण (Analysis)", "अंतरण", "पुनर्गठन", "समीक्षा"], 
                 a: "विश्लेषण (Analysis)" 
             }
-        ]
-    },
+        ],
+        "Chapter 4: अनुवाद का परीक्षण, पुनरीक्षण, मूल्यांकन और समीक्षा": [
+            { 
+                q: "अनुवाद परीक्षण का पहला मापदंड क्या है?", 
+                options: ["सटीकता (Accuracy)", "शैली", "लंबाई", "रंग"], 
+                a: "सटीकता (Accuracy)" 
+            }
+        ] // <-- Yahan bracket miss tha, maine laga diya
+    }, // <-- Yahan comma miss tha, maine laga diya
     "English": {
         "Chapter 1: Pinjar": [],
         "Chapter 2: The Home and the World": [],
@@ -55,7 +63,7 @@ const allQuestions = {
     "Fitter Theory": { "Chapter 1: Safety & Tools": [] }
 };
 
-// 3. Quiz Logic (Pura Logic pehle jaisa hi sahi hai)
+// 3. Quiz Logic (Baki logic bilkul sahi hai)
 let currentSet = [];
 let currentIndex = 0;
 let userAnswers = {};
