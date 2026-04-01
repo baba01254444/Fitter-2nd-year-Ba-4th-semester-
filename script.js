@@ -6,7 +6,8 @@ const subjects = [
             "Chapter 1: अनुवाद का अर्थ और स्वरूप", 
             "Chapter 2: हिंदी अनुवाद का अर्थ और महत्व",
             "Chapter 3: अनुवाद के सिद्धांत व प्रक्रिया",
-            "Chapter 4: अनुवाद का परीक्षण, पुनरीक्षण, मूल्यांकन और समीक्षा"
+            "Chapter 4: अनुवाद का परीक्षण, पुनरीक्षण, मूल्यांकन और समीक्षा",
+            "Chapter 5: पारिभाषिक शब्दावली: अर्थ और स्वरूप" // Upur aur niche naam same hona chahiye
         ] 
     },
     { name: "English", chapters: ["Chapter 1: Pinjar", "Chapter 2: The Home and the World", "Chapter 3: Kanyadan", "Chapter 4: Translation Studies"] },
@@ -47,12 +48,21 @@ const allQuestions = {
                 options: ["सटीकता (Accuracy)", "शैली", "लंबाई", "रंग"], 
                 a: "सटीकता (Accuracy)" 
             }
-        ] // <-- Yahan bracket miss tha, maine laga diya
-    }, // <-- Yahan comma miss tha, maine laga diya
+        ],
+        "Chapter 5: पारिभाषिक शब्दावली: अर्थ और स्वरूप": [
+            { 
+                q: "पारिभाषिक शब्द क्या हैं?", 
+                options: ["विशिष्ट विषय के विशेष शब्द", "दैनिक उपयोग शब्द", "काव्य शब्द", "भावपूर्ण शब्द"], 
+                a: "विशिष्ट विषय के विशेष शब्द" 
+            },
+            { 
+                q: "'Terminology' का हिंदी अनुवाद क्या है?", 
+                options: ["पारिभाषिक शब्दावली", "साधारण शब्द", "मुहावरा", "कहानी"], 
+                a: "पारिभाषिक शब्दावली" 
+            }
+        ]
+    },
     "English": {
-        "Chapter 1: Pinjar": [],
-        "Chapter 2: The Home and the World": [],
-        "Chapter 3: Kanyadan": [],
         "Chapter 4: Translation Studies": [
             { q: "CAT stands for?", options: ["Computer Assisted Translation", "Creative Art", "Common Audio", "Culture"], a: "Computer Assisted Translation" }
         ]
@@ -63,7 +73,7 @@ const allQuestions = {
     "Fitter Theory": { "Chapter 1: Safety & Tools": [] }
 };
 
-// 3. Quiz Logic (Baki logic bilkul sahi hai)
+// 3. Quiz Logic
 let currentSet = [];
 let currentIndex = 0;
 let userAnswers = {};
